@@ -1,16 +1,17 @@
 package com.tw.obc;
 
 /**
- * Created by mahalaks on 09/01/15.
+ * Created by mahalaks on 10/01/15.
  */
-public class CenteredDiamond extends Diamond {
+public class DiamondWithName extends Diamond{
 
     int size;
 
-    public CenteredDiamond(int size)
+    String name = "mahalakshme";
+
+    public DiamondWithName(int size)
     {
         super(size);
-
         this.size = size;
     }
 
@@ -27,10 +28,12 @@ public class CenteredDiamond extends Diamond {
     private void constructCenterPart() {
         for(int breadth = 0; breadth < 2 * size - 1; breadth++)
         {
-            System.out.print("*");
+            System.out.print(name.charAt(breadth));
         }
 
         System.out.println();
     }
+
+
 
 }

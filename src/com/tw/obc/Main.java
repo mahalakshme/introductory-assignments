@@ -2,7 +2,6 @@ package com.tw.obc;
 
 abstract class Pattern
 {
-    char representation;
 
     int size;
 
@@ -32,9 +31,15 @@ public class Main {
         Triangle isoscelesTriangle = new IsoscelesTriangle(4);
         isoscelesTriangle.Draw();
 
+        System.out.println();
+
         CenteredDiamond centeredDiamond = new CenteredDiamond(3);
         centeredDiamond.Draw();
 
+        System.out.println();
+
+        DiamondWithName diamondWithName = new DiamondWithName(3);
+        diamondWithName.Draw();
 
     }
 }
